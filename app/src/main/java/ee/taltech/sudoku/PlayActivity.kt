@@ -1,16 +1,14 @@
 package ee.taltech.sudoku
 
-import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class PlayActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_play)
     }
-
     override fun onStart() {
         super.onStart()
     }
@@ -35,12 +33,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
     }
 
-    fun onClickExit(view: View) {
+    fun onClickStopGame(view: View) {
         finish()
-    }
-
-    fun onClickStartGame(view: View) {
-        val intent = Intent(this, PlayActivity::class.java)
-        startActivity(intent)
     }
 }

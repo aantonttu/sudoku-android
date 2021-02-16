@@ -18,7 +18,7 @@ class SudokuView @JvmOverloads constructor(
     private val thickLinePaint = Paint().apply {
         style = Paint.Style.STROKE
         color = Color.BLACK
-        strokeWidth = 4F
+        strokeWidth = 10F
     }
 
     private val thinLinePaint = Paint().apply {
